@@ -1,0 +1,16 @@
+node_modules
+node
+target
+*.iml
+.classpath
+pom.xml.versionsBackup
+.DS_Store
+dist
+pom.xml.releaseBackup
+release.properties
+.idea
+work
+
+src/main/webapp/css/bootstrap*.css
+src/main/webapp/css/bootstrap*.css.map
+

@@ -1,0 +1,20 @@
+<?jelly escape-by-default='true'?>
+<!--
+Use it like <st:adjunct includes="io.jenkins.plugins.bootstrap5"/>
+-->
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler">
+
+  <j:new var="h" className="hudson.Functions" />
+  ${h.initPageVariables(context)}
+
+  <st:adjunct includes="io.jenkins.plugins.jquery3"/>
+  <st:adjunct includes="io.jenkins.plugins.popper"/>
+
+  <link type="text/css" rel="stylesheet" href="${resURL}/plugin/bootstrap5-api/css/bootstrap-custom-build.css"/>
+  <link type="text/css" rel="stylesheet" href="${resURL}/plugin/bootstrap5-api/css/jenkins-style.css"/>
+
+  <script type="text/javascript" src="${resURL}/plugin/bootstrap5-api/js/bootstrap.min.js"/>
+  <script type="text/javascript" src="${resURL}/plugin/bootstrap5-api/js/no-prototype.js"/>
+
+</j:jelly>
+

@@ -1,0 +1,43 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:fa="/font-awesome">
+  <st:documentation>
+    Renders a Bootstrap card.
+
+    <st:attribute name="title" use="required" type="String">
+      The title of the card.
+    </st:attribute>
+    <st:attribute name="pngIcon" use="optional" type="String">
+      <![CDATA[
+          A PNG title icon to be shown on the top right corner (located in the static resources of the plugin, e.g.
+          '${resURL}/plugin/forensics-api/icons/forensics-48x48.png').
+      ]]>
+    </st:attribute>
+    <st:attribute name="fontAwesomeIcon" use="optional" type="String">
+      A Font Awesome SVG icon to be shown at the top right corner, e.g. 'chevron-circle-up'.
+    </st:attribute>
+    <st:attribute name="class" use="optional" type="String">
+      Additional classes to be applied to the card.
+    </st:attribute>
+
+  </st:documentation>
+
+  <st:adjunct includes="io.jenkins.plugins.bootstrap5"/>
+
+  <div class="card ${class}">
+    <div class="card-body">
+      <div class="card-title">
+        ${title}
+
+        <j:if test="${pngIcon!=null}">
+          <img src="${pngIcon}" class="icon-right"/>
+        </j:if>
+        <j:if test="${fontAwesomeIcon!=null}">
+          <fa:svg-icon name="${fontAwesomeIcon}" class="icon-right"/>
+        </j:if>
+
+      </div>
+      <d:invokeBody/>
+    </div>
+  </div>
+
+</j:jelly>

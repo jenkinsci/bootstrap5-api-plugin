@@ -1,0 +1,34 @@
+{
+  "name": "bootstrap5",
+  "version": "5.0.0",
+  "description": "Bootstrap 5 Jenkins Plugin",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.0-beta3",
+    "remark-cli": "^6.0.1",
+    "remark-lint": "^6.0.5",
+    "remark-preset-lint-recommended": "^3.0.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "build": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 etc -o target/bootstrap5-api/css",
+    "lint-md": "remark ."
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-recommended"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenkinsci/bootstrap5-api-plugin.git"
+  },
+  "author": "Ullrich Hafner",
+  "license": "MIT",
+  "homepage": "https://github.com/jenkinsci/bootstrap5-api-plugin#readme"
+}
