@@ -6,8 +6,8 @@
     "doc": "doc"
   },
   "dependencies": {
-    "@popperjs/core": "^2.9.2",
-    "bootstrap": "^5.0.0-beta3",
+    "@popperjs/core": "^2.8.6",
+    "bootstrap": "^5.0.0-beta2",
     "remark-cli": "^6.0.1",
     "remark-lint": "^6.0.5",
     "remark-preset-lint-recommended": "^3.0.2"
