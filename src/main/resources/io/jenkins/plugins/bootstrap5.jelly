@@ -7,6 +7,7 @@ Use it like <st:adjunct includes="io.jenkins.plugins.bootstrap5"/>
   <j:new var="h" className="hudson.Functions" />
   ${h.initPageVariables(context)}
 
+  <st:adjunct includes="io.jenkins.plugins.jquery3"/> <!-- FIXME: no-prototype.js dependes on JQuery -->
   <st:adjunct includes="io.jenkins.plugins.popper2"/>
 
   <link type="text/css" rel="stylesheet" href="${resURL}/plugin/bootstrap5-api/css/bootstrap-custom-build.css"/>
@@ -14,6 +15,10 @@ Use it like <st:adjunct includes="io.jenkins.plugins.bootstrap5"/>
 
   <script type="text/javascript" src="${resURL}/plugin/bootstrap5-api/js/bootstrap.min.js"/>
   <script type="text/javascript" src="${resURL}/plugin/bootstrap5-api/js/no-prototype.js"/>
+
+  <script>
+    const bootstrap5 = bootstrap;
+  </script>
 
 </j:jelly>
 
