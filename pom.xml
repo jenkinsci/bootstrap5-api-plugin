@@ -55,15 +55,8 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-  <dependencies>
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>bootstrap</artifactId>
-      <version>${bootstrap.version}</version>
-      <scope>provided</scope>
-    </dependency>
 
-    <!-- WebJars Dependencies - bundled as API plugins -->
+  <dependencies>
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>popper2-api</artifactId>
@@ -74,7 +67,6 @@
       <artifactId>font-awesome-api</artifactId>
       <version>${font-awesome-api.version}</version>
     </dependency>
-
   </dependencies>
 
   <build>
