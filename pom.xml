@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.jvnet.hudson.plugins</groupId>
     <artifactId>analysis-pom</artifactId>
-    <version>5.4.0</version>
+    <version>5.6.0</version>
     <relativePath />
   </parent>
 
@@ -25,8 +25,7 @@
 
     <module.name>${project.groupId}.bootstrap5</module.name>
 
-    <popper-api.version>1.16.1-2</popper-api.version>
-<!--  FIXME: replace with popper 2 once released  <popper-api.version>1.16.1-2</popper-api.version>-->
+    <popper2-api.version>2.5.4-1</popper2-api.version>
     <font-awesome-api.version>5.15.2-2</font-awesome-api.version>
     <plugin-util-api.version>2.1.0</plugin-util-api.version>
 
@@ -67,8 +66,8 @@
     <!-- WebJars Dependencies - bundled as API plugins -->
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
-      <artifactId>popper-api</artifactId>
-      <version>${popper-api.version}</version>
+      <artifactId>popper2-api</artifactId>
+      <version>${popper2-api.version}</version>
     </dependency>
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
