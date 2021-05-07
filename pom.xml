@@ -19,15 +19,12 @@
   <description>Provides Bootstrap 5 for Jenkins plugins.</description>
 
   <properties>
-    <revision>5.0.0-beta4-1</revision>
+    <revision>5.0.0-1</revision>
     <changelist>-SNAPSHOT</changelist>
-    <bootstrap.version>5.0.0-beta3</bootstrap.version>
-
     <module.name>${project.groupId}.bootstrap5</module.name>
 
     <popper2-api.version>2.5.4-1</popper2-api.version>
-    <font-awesome-api.version>5.15.2-2</font-awesome-api.version>
-    <plugin-util-api.version>2.1.0</plugin-util-api.version>
+    <font-awesome-api.version>5.15.3-1</font-awesome-api.version>
 
   </properties>
 
@@ -46,15 +43,6 @@
     </developer>
   </developers>
 
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>io.jenkins.plugins</groupId>
-        <artifactId>plugin-util-api</artifactId>
-        <version>${plugin-util-api.version}</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
 
   <dependencies>
     <dependency>
