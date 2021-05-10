@@ -13,7 +13,7 @@
     "remark-preset-lint-recommended": "^5.0.0"
   },
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "node-sass": "^6.0.0"
   },
   "scripts": {
     "build": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 etc -o target/bootstrap5-api/css",
