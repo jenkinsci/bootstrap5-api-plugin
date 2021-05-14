@@ -12,8 +12,8 @@ image:https://github.com/jenkinsci/bootstrap5-api-plugin/workflows/GitHub%20CI/b
 Provides https://getbootstrap.com/[Bootstrap 5] for Jenkins Plugins. Bootstrap is -- according to their self-perception --
 the world’s most popular front-end component library to build responsive, mobile-first projects on the web. It is
 an open source toolkit for developing with HTML, CSS, and JS. Developers can quickly prototype their ideas or
-build entire apps with their Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins
-built on jQuery.
+build entire apps with their Sass variables and mixins, responsive grid system, extensive prebuilt components,
+and powerful plugins.
 
 This plugin bundles the latest release and corresponding Jenkins UI elements.
 Note that the Bootstrap release build has been adapted to integrate well with the existing Jenkins styles. For
