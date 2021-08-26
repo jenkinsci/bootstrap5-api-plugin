@@ -8,6 +8,12 @@
   "dependencies": {
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.1.0",
+    "autoprefixer": "^10.2.6",
+    "cross-env": "^7.0.3",
+    "rtlcss": "^3.3.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
     "remark-cli": "^10.0.0",
     "remark-lint": "^9.0.1",
     "remark-preset-lint-recommended": "^6.0.1"
@@ -16,7 +22,10 @@
     "node-sass": "^6.0.1"
   },
   "scripts": {
+    "full-build": "npm-run-all build css-rtl css-prefix",
     "build": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 etc -o target/bootstrap5-api/css",
+    "css-rtl": "cross-env NODE_ENV=RTL postcss --config etc/postcss.config.js --dir \"target/bootstrap5-api/css\" --ext \".rtl.css\" \"target/bootstrap5-api/css/*.css\" \"!target/bootstrap5-api/css/*.min.css\" \"!target/bootstrap5-api/css/*.rtl.css\"",
+    "css-prefix": "postcss --config etc/postcss.config.js --replace \"target/bootstrap5-api/css/*.css\" \"!target/bootstrap5-api/css/*.rtl*.css\" \"!target/bootstrap5-api/css/*.min.css\"",
     "lint-md": "remark ."
   },
   "remarkConfig": {
