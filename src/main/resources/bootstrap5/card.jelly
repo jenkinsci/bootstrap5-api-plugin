@@ -15,6 +15,10 @@
     <st:attribute name="fontAwesomeIcon" use="optional" type="String">
       A Font Awesome SVG icon to be shown at the top right corner, e.g. 'chevron-circle-up'.
     </st:attribute>
+    <st:attribute name="fontAwesomeStyle" use="optional" type="String">
+      FontAwesome Icon style to be used. Allowed style values are "solid", "regular", or "brands". If no style is
+      defined then the default style "solid" will be used.
+    </st:attribute>
     <st:attribute name="class" use="optional" type="String">
       Additional classes to be applied to the card.
     </st:attribute>
@@ -32,7 +36,7 @@
           <img src="${pngIcon}" class="icon-right"/>
         </j:if>
         <j:if test="${fontAwesomeIcon!=null}">
-          <fa:svg-icon name="${fontAwesomeIcon}" class="icon-right"/>
+          <fa:svg-icon name="${fontAwesomeIcon}" prefix="${fontAwesomeStyle != null ? fontAwesomeStyle : 'solid'}" class="icon-right"/>
         </j:if>
 
       </div>
