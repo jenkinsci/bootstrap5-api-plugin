@@ -57,7 +57,7 @@ should occupy. Typically, all visible components are mapped on the available spa
 In a Jenkins view we have a fixed header and footer and a navigation bar on the left
 (20 percent of the horizontal space). The rest of a screen can be used by
 a details view. In order to simplify the distribution of elements in that remaining space we use
-https://getbootstrap.com/docs/4.4/layout/grid/[Bootstrap's grid system].
+https://getbootstrap.com/docs/5.1/layout/grid/[Bootstrap's grid system].
 
 .Jenkins layout with a details view that contains a grid system
 [#img-grid]
@@ -65,13 +65,12 @@ image::grid.png[Grid layout in Jenkins]
 
 That means, a view is split into 12 columns and and arbitrary number of rows. This grid system is simple to use
 (but complex enough to also support fancy screen layouts) - I won't go into
-details here, please refer to the https://getbootstrap.com/docs/4.4/layout/grid/[Bootstrap documentation]
+details here, please refer to the https://getbootstrap.com/docs/5.1/layout/grid/[Bootstrap documentation]
 for details.
 
 For the forensics detail view we use a simple grid of two rows and two columns. Since the number of columns always is 12
-we need to create two "fat" columns that fill 6 of the standard columns.
-In order to create such a view in our
-plugin we need to create a view given as a jelly file and a corresponding Java view model object. A view with this layout
+we need to create two "fat" columns that fill 6 of the standard columns. In order to create such a view in our plugin we
+need to create a view given as a jelly file and a corresponding Java view model object. A view with this layout
 is shown in the following snippet:
 
 [source,xml,linenums]
@@ -152,7 +151,7 @@ to get a consistent look and feel in Jenkins' plugin ecosystem.
 [#img-card]
 image::card.png[Card examples]
 
-Note that the size of the cards is determined by the grid configuration, see <<boostrap-grid>>.
+Note that the size of the cards is determined by the grid configuration, see section <<Grid layout>>.
 
 You can find several examples of Jenkins views that use jQuery in the
 https://github.com/jenkinsci/warnings-ng-plugin[Warnings Next Generation plugin]

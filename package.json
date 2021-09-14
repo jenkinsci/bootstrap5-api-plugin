@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.10.1",
-    "bootstrap": "^5.1.0",
+    "bootstrap": "^5.1.1",
     "autoprefixer": "^10.3.4",
     "cross-env": "^7.0.3",
     "rtlcss": "^3.3.0",
