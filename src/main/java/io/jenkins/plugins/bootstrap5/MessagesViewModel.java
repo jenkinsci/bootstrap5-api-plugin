@@ -13,6 +13,7 @@ import hudson.model.Run;
  *
  * @author Ullrich Hafner
  */
+@SuppressWarnings("PMD.DataClass")
 public class MessagesViewModel implements ModelObject {
     private final Run<?, ?> owner;
     private final List<String> errorMessages;
