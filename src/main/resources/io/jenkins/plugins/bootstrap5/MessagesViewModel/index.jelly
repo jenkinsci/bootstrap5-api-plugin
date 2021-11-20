@@ -5,7 +5,7 @@
 
   <bs:page it="${it}">
 
-    <j:if test="${size(errors) > 0}">
+    <j:if test="${size(it.errorMessages) > 0}">
       <div class="row py-3">
         <div class="col">
           <bs:card title="${%Error Messages}" fontAwesomeIcon="exclamation-triangle">
