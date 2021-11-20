@@ -30,14 +30,6 @@ pre {
     font-size: var(--font-size-sm);
 }
 
-.info-page-decorator {
-    fill: #b4b4b4;
-    height: 16px;
-    width: 16px;
-    vertical-align: text-bottom;
-    margin-left: 0.2em;
-}
-
 /* ------------------------------------------------------------------------------------------------------------------- */
 /* Bootstrap Carousel                                                                                                  */
 /* ------------------------------------------------------------------------------------------------------------------- */
@@ -59,7 +51,6 @@ pre {
     font-size: inherit;
 }
 
-
 .card-title {
     font-size: 1.2rem;
     font-weight: 500;
@@ -68,7 +59,7 @@ pre {
 
 .icon-right {
     float: right;
-    fill: #b4b4b4;
+    fill: var(--fa-image-color);
     height: 48px;
     width: 48px;
     position: absolute;

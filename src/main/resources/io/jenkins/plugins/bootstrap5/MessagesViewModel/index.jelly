@@ -1,5 +1,5 @@
 <?jelly escape-by-default='true'?>
-<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:bs="/bootstrap5">
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:bs="/bootstrap5" xmlns:fa="/font-awesome">
 
   <st:header name="Content-Type" value="text/html;charset=UTF-8"/>
 
@@ -8,19 +8,24 @@
     <j:if test="${size(it.errorMessages) > 0}">
       <div class="row py-3">
         <div class="col">
-          <bs:card title="${%Error Messages}" fontAwesomeIcon="exclamation-triangle">
 
-            <pre>
-              <samp id="errors" class="log-output">
-                <j:forEach var="message" items="${it.errorMessages}">
-                  <div>
-                    ${message}
-                  </div>
-                </j:forEach>
-              </samp>
-            </pre>
-
-          </bs:card>
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">
+                ${%Error Messages}
+                <fa:svg-icon name="exclamation-triangle" class="icon-right fa-image-button-warning"/>
+              </div>
+              <pre>
+                <samp id="errors" class="log-output">
+                  <j:forEach var="message" items="${it.errorMessages}">
+                    <div>
+                      ${message}
+                    </div>
+                  </j:forEach>
+                </samp>
+              </pre>
+            </div>
+          </div>
         </div>
       </div>
     </j:if>
