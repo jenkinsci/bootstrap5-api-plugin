@@ -93,5 +93,14 @@ public class MessagesViewModel implements ModelObject {
     public Collection<String> getErrorMessages() {
         return errorMessages;
     }
+
+    /**
+     * Returns whether error messages are present.
+     *
+     * @return {@code true} if there are error messages, {@code false} if there are only info messages
+     */
+    public boolean hasErrors() {
+        return !errorMessages.isEmpty();
+    }
 }
 
