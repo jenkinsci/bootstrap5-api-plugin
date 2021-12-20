@@ -15,7 +15,7 @@
     "postcss": "^8.4.5",
     "postcss-cli": "^9.0.2",
     "remark-cli": "^10.0.1",
-    "remark-lint": "^9.1.0",
+    "remark-lint": "^9.1.1",
     "remark-preset-lint-recommended": "^6.1.2"
   },
   "devDependencies": {
