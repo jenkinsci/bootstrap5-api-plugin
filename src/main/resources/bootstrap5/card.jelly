@@ -22,13 +22,16 @@
     <st:attribute name="class" use="optional" type="String">
       Additional classes to be applied to the card.
     </st:attribute>
+    <st:attribute name="bodyClass" use="optional" type="String">
+      Additional classes to be applied to the card-body.
+    </st:attribute>
 
   </st:documentation>
 
   <st:adjunct includes="io.jenkins.plugins.bootstrap5"/>
 
   <div class="card ${class}">
-    <div class="card-body">
+    <div class="card-body ${bodyClass}">
       <div class="card-title">
         ${title}
 
