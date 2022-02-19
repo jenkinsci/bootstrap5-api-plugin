@@ -13,7 +13,7 @@
             <div class="card-body">
               <div class="card-title">
                 ${%Error Messages}
-                <fa:svg-icon name="exclamation-triangle" class="icon-right fa-image-button-warning"/>
+                <fa:svg-icon name="triangle-exclamation" class="icon-right fa-image-button-warning"/>
               </div>
               <pre>
                 <samp id="errors" class="log-output">
@@ -33,7 +33,7 @@
     <div class="row py-3">
       <div class="col">
 
-        <bs:card title="${%Information Messages}" fontAwesomeIcon="info-circle">
+        <bs:card title="${%Information Messages}" fontAwesomeIcon="circle-info">
 
           <pre>
             <samp id="info" class="log-output">
