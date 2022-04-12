@@ -1,0 +1,8 @@
+<?jelly escape-by-default='true'?>
+
+<div>
+  Provides <a href="https://getbootstrap.com/">Bootstrap 5</a> for Jenkins Plugins.
+  Bootstrap is (according to their self-perception)
+  the world’s most popular front-end component library to build responsive,
+  mobile-first projects on the web.
+</div>
