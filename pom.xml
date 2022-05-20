@@ -23,7 +23,7 @@
     <changelist>-SNAPSHOT</changelist>
     <module.name>${project.groupId}.bootstrap5</module.name>
 
-    <popper2-api.version>2.11.5-1</popper2-api.version>
+    <popper2-api.version>2.11.5-2</popper2-api.version>
     <font-awesome-api.version>6.0.0-1</font-awesome-api.version>
     <plugin-util-api.version>2.16.0</plugin-util-api.version>
 
