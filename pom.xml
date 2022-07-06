@@ -77,16 +77,6 @@
               <arguments>install</arguments>
             </configuration>
           </execution>
-          <execution>
-            <id>npm build</id>
-            <goals>
-              <goal>npm</goal>
-            </goals>
-            <phase>compile</phase>
-            <configuration>
-              <arguments>run full-build</arguments>
-            </configuration>
-          </execution>
         </executions>
       </plugin>
       <plugin>
