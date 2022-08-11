@@ -105,11 +105,11 @@ is shown in the following snippet:
 </j:jelly>
 ----
 <1> Enable the property `nogrid` so we can use the bootstrap built-in grid (and not the Jenkins grid). Otherwise the layout will break.
-<2> Import Bootstrap 4: Importing of JS and CSS components is done using the adjunct concept,
+<2> Import Bootstrap 5: Importing of JS and CSS components is done using the adjunct concept,
 which is the preferred way of referencing static resources within Jenkins' Stapler Web framework.
 <3> The whole view will be placed into a fluid container that fills up the whole screen (100% width).
 <4> A new row of the view is specified with class `row`. The additional class `py-3` defines the padding to use for
-this row, see https://getbootstrap.com/docs/4.0/utilities/spacing/[Bootstrap Spacing] for more details.
+this row, see https://getbootstrap.com/docs/5.2/utilities/spacing/[Bootstrap Spacing] for more details.
 <5> Since Bootstrap automatically splits up a row into 12 equal sized columns we define here
 that the first column should occupy 6 of these 12 columns. You can also leave off the detailed numbers, then Bootstrap will
 automatically distribute the content in the available space. Just be aware that this not what you want in most of the times.
@@ -128,7 +128,7 @@ opening the same page on a larger device, then two of the pie charts are shown s
 When presenting information of a plugin as a block, typically plain text elements are shown. This will normally result
 in some kind of boring web pages. In order to create a more appealing interface, it makes sense to present such information
 in a card, that has a border, a header, an icon, and so on. In order to create such a
-https://getbootstrap.com/docs/4.4/components/card/[Bootstrap card] a small jelly tag has been provided by the new
+https://getbootstrap.com/docs/5.2/components/card/[Bootstrap card] a small jelly tag has been provided by the new
 https://github.com/jenkinsci/bootstrap5-api-plugin[Bootstrap plugin] that simplifies this task for a plugin.
 Such a card can be easily created in a jelly view in the following way:
 
