@@ -35,12 +35,15 @@
       <div class="card-title">
         ${title}
 
-        <j:if test="${pngIcon!=null}">
-          <img src="${pngIcon}" class="icon-right"/>
-        </j:if>
-        <j:if test="${fontAwesomeIcon!=null}">
-          <fa:svg-icon name="${fontAwesomeIcon}" prefix="${fontAwesomeStyle != null ? fontAwesomeStyle : 'solid'}" class="icon-right"/>
-        </j:if>
+        <span class="icon-border">
+          <j:if test="${pngIcon!=null}">
+            <img src="${pngIcon}" class="icon-right"/>
+          </j:if>
+          <j:if test="${fontAwesomeIcon!=null}">
+            <fa:svg-icon name="${fontAwesomeIcon}" prefix="${fontAwesomeStyle != null ? fontAwesomeStyle : 'solid'}"
+                         class="icon-right"/>
+          </j:if>
+        </span>
 
       </div>
       <d:invokeBody/>
