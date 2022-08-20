@@ -47,6 +47,9 @@ pre {
 /* ------------------------------------------------------------------------------------------------------------------- */
 .card {
     background-color: var(--background);
+    border-radius: calc(var(--table-border-radius) + 2px);
+    border-width: 5px;
+    border-color: var(--table-background);
     color: var(--text-color);
     font-size: inherit;
 }
@@ -54,8 +57,8 @@ pre {
 .card-header {
     font-size: 1.1rem;
     font-weight: 500;
-    margin-bottom: 1.5rem;
-    background: var(--item-background--hover);
+    background: var(--table-background);
+    border-bottom: var(--table-background);
 }
 
 .card-header-title {
