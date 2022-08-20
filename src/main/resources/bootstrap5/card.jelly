@@ -31,10 +31,11 @@
   <st:adjunct includes="io.jenkins.plugins.bootstrap5"/>
 
   <div class="card ${class}">
-    <div class="card-body ${bodyClass}">
-      <div class="card-title">
-        ${title}
-
+    <div class="card-header">
+      <div class="d-flex align-items-center">
+        <span class="card-header-title">
+          ${title}
+        </span>
         <span class="icon-border">
           <j:if test="${pngIcon!=null}">
             <img src="${pngIcon}" class="icon-right"/>
@@ -44,8 +45,9 @@
                          class="icon-right"/>
           </j:if>
         </span>
-
       </div>
+    </div>
+    <div class="card-body ${bodyClass}">
       <d:invokeBody/>
     </div>
   </div>

@@ -51,10 +51,15 @@ pre {
     font-size: inherit;
 }
 
-.card-title {
-    font-size: 1.2rem;
+.card-header {
+    font-size: 1.1rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
+    background: var(--item-background--hover);
+}
+
+.card-header-title {
+    margin-right: auto;
 }
 
 .icon-right  {
