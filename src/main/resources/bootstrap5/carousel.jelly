@@ -15,11 +15,11 @@
     <div class="carousel-inner">
       <d:invokeBody/>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#overview-carousel" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#${id}" data-bs-slide="prev">
       <fa:svg-icon name="chevron-left" />
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#overview-carousel" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#${id}" data-bs-slide="next">
       <fa:svg-icon name="chevron-right" />
       <span class="visually-hidden">Next</span>
     </button>
