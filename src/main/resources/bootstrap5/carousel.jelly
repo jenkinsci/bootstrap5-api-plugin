@@ -1,0 +1,28 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:fa="/font-awesome">
+  <st:documentation>
+    Renders a Bootstrap carousel.
+
+    <st:attribute name="id" use="required" type="String">
+      The ID of the carousel.
+    </st:attribute>
+
+  </st:documentation>
+
+  <st:adjunct includes="io.jenkins.plugins.bootstrap5"/>
+
+  <div id="${id}" class="carousel slide carousel" data-bs-interval="false">
+    <div class="carousel-inner">
+      <d:invokeBody/>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#overview-carousel" data-bs-slide="prev">
+      <fa:svg-icon name="chevron-left" />
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#overview-carousel" data-bs-slide="next">
+      <fa:svg-icon name="chevron-right" />
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</j:jelly>
