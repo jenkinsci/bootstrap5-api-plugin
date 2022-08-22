@@ -3,6 +3,10 @@
 /* These styles will only be picked up on Jenkins >=2.239
 /* ------------------------------------------------------------------------------------------------------------------- */
 
+:root {
+    --bs-nav-tabs-border-width: 0;
+}
+
 body {
     background-color: var(--background);
     color: var(--text-color);
@@ -28,6 +32,21 @@ pre {
 
 .log-output {
     font-size: var(--font-size-sm);
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+/* Bootstrap tabs in Jenkins style                                                                                                  */
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+.tabBar {
+    list-style: none;
+}
+
+.tabBar .tab a.active {
+    background: var(--tabs-item-background--selected);
+    color: var(--tabs-item-foreground--selected);
+    cursor: default;
+    z-index: 2;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------- */
