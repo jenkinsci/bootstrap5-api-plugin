@@ -7,6 +7,11 @@
     --bs-nav-tabs-border-width: 0;
 }
 
+.modal {
+    --bs-modal-color: var(--text-color);
+    --bs-modal-bg: var(--background);
+}
+
 body {
     background-color: var(--background);
     color: var(--text-color);
