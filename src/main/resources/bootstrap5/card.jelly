@@ -1,5 +1,5 @@
 <?jelly escape-by-default='true'?>
-<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:fa="/font-awesome">
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout">
   <st:documentation>
     Renders a Bootstrap card.
 
@@ -8,7 +8,7 @@
     </st:attribute>
     <st:attribute name="pngIcon" use="optional" type="String">
       <![CDATA[
-          A PNG title icon to be shown on the top right corner (located in the static resources of the plugin, e.g.
+          A PNG title icon to be shown in the top right corner (located in the static resources of the plugin, e.g.
           '${resURL}/plugin/forensics-api/icons/forensics-48x48.png').
       ]]>
     </st:attribute>
@@ -18,6 +18,9 @@
     <st:attribute name="fontAwesomeStyle" use="optional" type="String">
       FontAwesome Icon style to be used. Allowed style values are "solid", "regular", or "brands". If no style is
       defined then the default style "solid" will be used.
+    </st:attribute>
+    <st:attribute name="symbol" use="optional" type="String">
+      A Jenkins symbol to be shown in the top right corner, e.g. 'symbol-solid/triangle-exclamation plugin-font-awesome-api'.
     </st:attribute>
     <st:attribute name="class" use="optional" type="String">
       Additional classes to be applied to the card.
@@ -41,8 +44,10 @@
             <img src="${pngIcon}" class="icon-right"/>
           </j:if>
           <j:if test="${fontAwesomeIcon!=null}">
-            <fa:svg-icon name="${fontAwesomeIcon}" prefix="${fontAwesomeStyle != null ? fontAwesomeStyle : 'solid'}"
-                         class="icon-right"/>
+            <l:icon src="symbol-${fontAwesomeStyle != null ? fontAwesomeStyle : 'solid'}/${fontAwesomeIcon} plugin-font-awesome-api" class="icon-right" />
+          </j:if>
+          <j:if test="${symbol!=null}">
+            <l:icon src="${symbol}" class="icon-right" />
           </j:if>
         </span>
       </div>
