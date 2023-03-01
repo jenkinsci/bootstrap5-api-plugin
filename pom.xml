@@ -22,6 +22,9 @@
     <revision>5.2.2-1</revision>
     <changelist>-SNAPSHOT</changelist>
     <module.name>${project.groupId}.bootstrap5</module.name>
+
+    <plugin-util-api.version>3.0.0-rc679.e40704a_a_f29f</plugin-util-api.version>
+
   </properties>
 
   <licenses>
@@ -38,6 +41,16 @@
       <email>ullrich.hafner@gmail.com</email>
     </developer>
   </developers>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.jenkins.plugins</groupId>
+        <artifactId>plugin-util-api</artifactId>
+        <version>${plugin-util-api.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <dependencies>
     <dependency>
