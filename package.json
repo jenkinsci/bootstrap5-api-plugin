@@ -19,7 +19,7 @@
     "remark-preset-lint-recommended": "^6.1.2"
   },
   "devDependencies": {
-    "node-sass": "^8.0.0"
+    "node-sass": "^9.0.0"
   },
   "scripts": {
     "full-build": "npm-run-all build css-rtl css-prefix",
