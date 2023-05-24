@@ -107,6 +107,15 @@
                     <exclude>*.bundle.*</exclude>
                   </excludes>
                 </resource>
+                <resource>
+                  <directory>${project.basedir}/node_modules/@popperjs/core/dist/umd</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>popper.js</include>
+                    <include>popper.min.js</include>
+                    <include>popper.min.js.flow</include>
+                  </includes>
+                </resource>
               </resources>
             </configuration>
           </execution>
