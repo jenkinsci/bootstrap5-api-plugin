@@ -19,6 +19,7 @@ $container-max-widths: (
 ) !default;
 
 @import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
 @import "../node_modules/bootstrap/scss/maps";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/utilities";
@@ -54,7 +55,6 @@ th {
 @import "../node_modules/bootstrap/scss/pagination";
 @import "../node_modules/bootstrap/scss/badge";
 @import "../node_modules/bootstrap/scss/alert";
-@import "../node_modules/bootstrap/scss/progress";
 @import "../node_modules/bootstrap/scss/list-group";
 @import "../node_modules/bootstrap/scss/close";
 @import "../node_modules/bootstrap/scss/toasts";
