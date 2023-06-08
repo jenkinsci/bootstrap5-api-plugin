@@ -155,6 +155,6 @@ Note that the size of the cards is determined by the grid configuration, see sec
 
 You can find several examples of Jenkins views that use jQuery in the
 https://github.com/jenkinsci/warnings-ng-plugin[Warnings Next Generation plugin]
-and in the https://github.com/jenkinsci/warnings-ng-plugin[Forensics plugin].
+and in the https://github.com/jenkinsci/forensics-api-plugin[Forensics plugin].
 
 
