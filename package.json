@@ -22,12 +22,13 @@
     "remark-preset-lint-recommended": "6.1.3"
   },
   "scripts": {
-    "full-build": "npm-run-all node-sass-build build css-rtl css-prefix",
+    "mvnbuild": "npm-run-all node-sass-build build css-rtl css-prefix",
     "node-sass-build": "npm rebuild node-sass",
     "build": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 etc -o target/bootstrap5-api/css",
     "css-rtl": "cross-env NODE_ENV=RTL postcss --config etc/postcss.config.js --dir \"target/bootstrap5-api/css\" --ext \".rtl.css\" \"target/bootstrap5-api/css/*.css\" \"!target/bootstrap5-api/css/*.min.css\" \"!target/bootstrap5-api/css/*.rtl.css\"",
     "css-prefix": "postcss --config etc/postcss.config.js --replace \"target/bootstrap5-api/css/*.css\" \"!target/bootstrap5-api/css/*.rtl*.css\" \"!target/bootstrap5-api/css/*.min.css\"",
-    "lint-md": "remark ."
+    "lint-md": "remark .",
+    "mvntest": ""
   },
   "remarkConfig": {
     "plugins": [
