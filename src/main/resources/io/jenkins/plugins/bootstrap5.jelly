@@ -15,6 +15,7 @@ Use it like <st:adjunct includes="io.jenkins.plugins.bootstrap5"/>
   <script type="text/javascript" src="${resURL}/plugin/bootstrap5-api/js/popper.min.js"/>
   <script type="text/javascript" src="${resURL}/plugin/bootstrap5-api/js/bootstrap.min.js"/>
   <script type="text/javascript" src="${resURL}/plugin/bootstrap5-api/js/no-prototype.js"/>
+  <script type="text/javascript" src="${resURL}/plugin/bootstrap5-api/js/theme-support.js"/>
 
   <script>
     const bootstrap5 = bootstrap;
