@@ -13,7 +13,7 @@
     "autoprefixer": "10.4.19",
     "cross-env": "7.0.3",
     "rtlcss": "4.1.1",
-    "node-sass": "9.0.0",
+    "sass": "1.77.2",
     "npm-run-all2": "6.1.2",
     "postcss": "8.4.38",
     "postcss-cli": "11.0.0",
@@ -22,10 +22,8 @@
     "remark-preset-lint-recommended": "7.0.0"
   },
   "scripts": {
-    "mvnbuild": "npm-run-all node-sass-build build css-rtl css-prefix",
-    "node-sass-build": "npm rebuild node-sass",
-    "build": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 etc -o target/bootstrap5-api/css",
-    "css-rtl": "cross-env NODE_ENV=RTL postcss --config etc/postcss.config.js --dir \"target/bootstrap5-api/css\" --ext \".rtl.css\" \"target/bootstrap5-api/css/*.css\" \"!target/bootstrap5-api/css/*.min.css\" \"!target/bootstrap5-api/css/*.rtl.css\"",
+    "mvnbuild": "npm-run-all css-compile css-prefix",
+    "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules etc/:target/bootstrap5-api/css/",
     "css-prefix": "postcss --config etc/postcss.config.js --replace \"target/bootstrap5-api/css/*.css\" \"!target/bootstrap5-api/css/*.rtl*.css\" \"!target/bootstrap5-api/css/*.min.css\"",
     "lint-md": "remark .",
     "mvntest": ""
