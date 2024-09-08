@@ -12,7 +12,7 @@
   "devDependencies": {
     "autoprefixer": "10.4.20",
     "cross-env": "7.0.3",
-    "rtlcss": "4.2.0",
+    "rtlcss": "4.3.0",
     "sass": "1.77.8",
     "npm-run-all2": "6.2.2",
     "postcss": "8.4.45",
