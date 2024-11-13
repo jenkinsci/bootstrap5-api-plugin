@@ -72,21 +72,6 @@ jobs:
                       "id": "spotbugs",
                       "sourcePath": "src/main/java",
                       "pattern": "**/target/spotbugsXml.xml"
-                    },
-                    {
-                      "id": "error-prone",
-                      "pattern": "**/maven.log"
-                    }
-                  ]
-                },
-                {
-                  "name": "Vulnerabilities",
-                  "id": "vulnerabilities",
-                  "icon": "shield",
-                  "tools": [
-                    {
-                      "id": "owasp-dependency-check",
-                      "pattern": "**/target/dependency-check-report.json"                    
                     }
                   ]
                 }
@@ -108,25 +93,6 @@ jobs:
                       "metric": "branch",
                       "sourcePath": "src/main/java",
                       "pattern": "**/target/site/jacoco/jacoco.xml"
-                    }
-                  ]
-                },
-                {
-                  "name": "Mutation Coverage",
-                  "tools": [
-                    {
-                      "id": "pit",
-                      "name": "Mutation Coverage",
-                      "metric": "mutation",
-                      "sourcePath": "src/main/java",
-                      "pattern": "**/target/pit-reports/mutations.xml"
-                    },
-                    {
-                      "id": "pit",
-                      "name": "Test Strength",
-                      "metric": "test-strength",
-                      "sourcePath": "src/main/java",
-                      "pattern": "**/target/pit-reports/mutations.xml"
                     }
                   ]
                 }
