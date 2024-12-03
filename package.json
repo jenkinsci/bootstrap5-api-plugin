@@ -13,7 +13,7 @@
     "autoprefixer": "10.4.20",
     "cross-env": "7.0.3",
     "rtlcss": "4.3.0",
-    "sass": "1.81.0",
+    "sass": "1.81.1",
     "npm-run-all2": "7.0.1",
     "postcss": "8.4.49",
     "postcss-cli": "11.0.0",
