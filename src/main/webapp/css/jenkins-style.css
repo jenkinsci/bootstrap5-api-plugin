@@ -62,10 +62,25 @@ pre {
 }
 
 .tabBar .tab a.active {
-    background: var(--tabs-item-background--selected);
-    color: var(--tabs-item-foreground--selected);
-    cursor: default;
     z-index: 2;
+    cursor: default;
+    font-weight: 450;
+    color: var(--tabs-item-foreground--active);
+
+    &::before {
+        background-clip: padding-box;
+        background-color: var(--tabs-item-background--selected) !important;
+        border: var(--jenkins-border--subtle) !important;
+    }
+
+    &::after {
+        display: none;
+    }
+
+    &::before,
+    &::after {
+        inset: 0;
+    }
 }
 
 /* ------------------------------------------------------------------------------------------------------------------- */
