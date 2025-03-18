@@ -22,7 +22,6 @@
     <revision>5.3.3-4</revision>
     <changelist>-SNAPSHOT</changelist>
     <module.name>${project.groupId}.bootstrap5</module.name>
-    <jenkins.version>2.496</jenkins.version>
   </properties>
 
   <licenses>
