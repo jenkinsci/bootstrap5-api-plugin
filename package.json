@@ -6,7 +6,7 @@
     "doc": "doc"
   },
   "dependencies": {
-    "bootstrap": "5.3.3",
+    "bootstrap": "5.3.5",
     "@popperjs/core": "2.11.8"
   },
   "devDependencies": {
