@@ -19,7 +19,7 @@
   <description>Provides Bootstrap 5 for Jenkins plugins.</description>
 
   <properties>
-    <revision>5.3.3-4</revision>
+    <revision>5.3.5-1</revision>
     <changelist>-SNAPSHOT</changelist>
     <module.name>${project.groupId}.bootstrap5</module.name>
     <jenkins.version>2.496</jenkins.version>
