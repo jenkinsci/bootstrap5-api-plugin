@@ -29,7 +29,7 @@
         <l:app-bar title="${title}"/>
       </j:if>
 
-      <div class="container-fluid ${class}">
+      <div class="${class}">
         <d:invokeBody/>
       </div>
     </l:main-panel>
