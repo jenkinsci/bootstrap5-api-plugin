@@ -25,14 +25,12 @@
 
       <st:adjunct includes="io.jenkins.plugins.bootstrap5"/>
 
+      <j:if test="${notitle == null}">
+        <l:app-bar title="${title}"/>
+      </j:if>
+
       <div class="container-fluid ${class}">
-
-        <j:if test="${notitle == null}">
-          <h1>${title}</h1>
-        </j:if>
-
         <d:invokeBody/>
-
       </div>
     </l:main-panel>
   </l:layout>
