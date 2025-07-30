@@ -7,7 +7,7 @@
       Owner of the page.
     </st:attribute>
     <st:attribute name="notitle" use="optional">
-      Hide the title on top of the page.
+      Hide the title on top of the page. This option can also be used if you wish to add a more complex app bar.
     </st:attribute>
     <st:attribute name="class" use="optional">
       Additional classes to be applied to the page body.
@@ -25,14 +25,12 @@
 
       <st:adjunct includes="io.jenkins.plugins.bootstrap5"/>
 
-      <div class="container-fluid ${class}">
+      <j:if test="${notitle == null}">
+        <l:app-bar title="${title}"/>
+      </j:if>
 
-        <j:if test="${notitle == null}">
-          <h1>${title}</h1>
-        </j:if>
-
+      <div class="${class}">
         <d:invokeBody/>
-
       </div>
     </l:main-panel>
   </l:layout>
