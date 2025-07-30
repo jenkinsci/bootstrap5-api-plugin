@@ -7,7 +7,7 @@
       Owner of the page.
     </st:attribute>
     <st:attribute name="notitle" use="optional">
-      Hide the title on top of the page.
+      Hide the title on top of the page. This option can also be used if you wish to add a more complex app bar.
     </st:attribute>
     <st:attribute name="class" use="optional">
       Additional classes to be applied to the page body.
