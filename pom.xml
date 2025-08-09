@@ -12,15 +12,15 @@
   <groupId>io.jenkins.plugins</groupId>
   <packaging>hpi</packaging>
   <name>Bootstrap 5 API Plugin</name>
-  <version>${revision}${changelist}</version>
+  <version>${revision}-${changelist}</version>
 
   <url>https://github.com/jenkinsci/bootstrap5-api-plugin</url>
 
   <description>Provides Bootstrap 5 for Jenkins plugins.</description>
 
   <properties>
-    <revision>5.3.7-3</revision>
-    <changelist>-SNAPSHOT</changelist>
+    <revision>5.3.7</revision>
+    <changelist>999999-SNAPSHOT</changelist>
     <module.name>${project.groupId}.bootstrap5</module.name>
     <jenkins.version>2.496</jenkins.version>
   </properties>
