@@ -1,12 +1,12 @@
 {
   "name": "bootstrap5-api",
-  "version": "5.3.7",
+  "version": "5.3.8",
   "description": "Bootstrap 5 Jenkins Plugin",
   "directories": {
     "doc": "doc"
   },
   "dependencies": {
-    "bootstrap": "5.3.7",
+    "bootstrap": "5.3.8",
     "@popperjs/core": "2.11.8"
   },
   "devDependencies": {
