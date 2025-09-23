@@ -90,6 +90,7 @@ pre {
 .carousel-control-prev, .carousel-control-next {
     width: 15px;
     fill: var(--text-color);
+    filter: none;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------- */
