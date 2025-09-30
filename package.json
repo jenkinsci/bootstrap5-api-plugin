@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "autoprefixer": "10.4.21",
-    "cross-env": "10.0.0",
+    "cross-env": "10.1.0",
     "rtlcss": "4.3.0",
     "sass": "1.93.2",
     "npm-run-all2": "8.0.4",
