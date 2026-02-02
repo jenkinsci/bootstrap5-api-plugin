@@ -10,7 +10,7 @@
     "@popperjs/core": "2.11.8"
   },
   "devDependencies": {
-    "autoprefixer": "10.4.23",
+    "autoprefixer": "10.4.24",
     "cross-env": "10.1.0",
     "rtlcss": "4.3.0",
     "sass": "1.97.3",
