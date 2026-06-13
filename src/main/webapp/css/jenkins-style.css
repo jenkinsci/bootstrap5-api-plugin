@@ -26,11 +26,6 @@
     --bs-modal-bg: var(--background);
 }
 
-body {
-    background-color: var(--background);
-    color: var(--text-color);
-}
-
 .table {
     color: inherit;
 }
