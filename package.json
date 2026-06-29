@@ -14,7 +14,7 @@
     "cross-env": "10.1.0",
     "rtlcss": "4.3.0",
     "sass": "1.99.0",
-    "npm-run-all2": "8.0.4",
+    "npm-run-all2": "9.0.2",
     "postcss": "8.5.15",
     "postcss-cli": "11.0.1",
     "remark-cli": "12.0.1",
