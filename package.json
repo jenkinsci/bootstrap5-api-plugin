@@ -16,7 +16,7 @@
     "sass": "1.102.0",
     "npm-run-all2": "9.0.3",
     "postcss": "8.5.26",
-    "postcss-cli": "11.0.1",
+    "postcss-cli": "12.0.0",
     "remark-cli": "12.0.1",
     "remark-lint": "10.0.1",
     "remark-preset-lint-recommended": "7.0.1"
