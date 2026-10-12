@@ -1,12 +1,11 @@
 package io.jenkins.plugins.bootstrap5;
 
+import hudson.model.ModelObject;
+import hudson.model.Run;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-
-import hudson.model.ModelObject;
-import hudson.model.Run;
 
 /**
  * A view model to visualize logging messages and errors of a build step.
@@ -30,8 +29,7 @@ public class MessagesViewModel implements ModelObject {
      * @param infoMessages
      *         all info messages that should be shown (should not be empty)
      */
-    public MessagesViewModel(final Run<?, ?> owner, final String displayName,
-            final List<String> infoMessages) {
+    public MessagesViewModel(final Run<?, ?> owner, final String displayName, final List<String> infoMessages) {
         this(owner, displayName, infoMessages, Collections.emptyList());
     }
 
@@ -47,8 +45,11 @@ public class MessagesViewModel implements ModelObject {
      * @param errorMessages
      *         all error messages that should be shown (might be empty)
      */
-    public MessagesViewModel(final Run<?, ?> owner, final String displayName,
-            final List<String> infoMessages, final List<String> errorMessages) {
+    public MessagesViewModel(
+            final Run<?, ?> owner,
+            final String displayName,
+            final List<String> infoMessages,
+            final List<String> errorMessages) {
         this.owner = owner;
         this.errorMessages = asImmutableList(errorMessages);
         this.infoMessages = asImmutableList(infoMessages);
@@ -103,4 +104,3 @@ public class MessagesViewModel implements ModelObject {
         return !errorMessages.isEmpty();
     }
 }
-

@@ -1,14 +1,12 @@
 package io.jenkins.plugins.bootstrap5;
 
-import java.util.List;
-
-import org.junit.jupiter.api.Test;
-
-import hudson.model.Run;
-
 import static java.util.Arrays.*;
 import static org.assertj.core.api.Assertions.*;
 import static org.mockito.Mockito.*;
+
+import hudson.model.Run;
+import java.util.List;
+import org.junit.jupiter.api.Test;
 
 /**
  * Tests the class {@link MessagesViewModel}.
