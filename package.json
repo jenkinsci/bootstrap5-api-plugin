@@ -21,9 +21,13 @@
     "remark-lint": "10.0.1",
     "remark-preset-lint-recommended": "7.0.1"
   },
+  "allowScripts": {
+    "@parcel/watcher": false,
+    "fsevents": false
+  },
   "scripts": {
     "mvnbuild": "npm-run-all css-compile css-prefix",
-    "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules etc/:target/bootstrap5-api/css/",
+    "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --quiet-deps --silence-deprecation=import --load-path=node_modules etc/:target/bootstrap5-api/css/",
     "css-prefix": "postcss --config etc/postcss.config.js --replace \"target/bootstrap5-api/css/*.css\" \"!target/bootstrap5-api/css/*.rtl*.css\" \"!target/bootstrap5-api/css/*.min.css\"",
     "lint-md": "remark .",
     "mvntest": ""
