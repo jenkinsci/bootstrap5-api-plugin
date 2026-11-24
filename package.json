@@ -1,29 +1,36 @@
 {
   "name": "bootstrap5-api",
-  "version": "5.3.8",
+  "version": "5.3.9",
   "description": "Bootstrap 5 Jenkins Plugin",
   "directories": {
     "doc": "doc"
   },
   "dependencies": {
-    "bootstrap": "5.3.8",
-    "@popperjs/core": "2.11.8"
+    "@popperjs/core": "2.11.8",
+    "bootstrap": "5.3.9"
   },
   "devDependencies": {
     "autoprefixer": "10.6.2",
     "cross-env": "10.1.0",
-    "rtlcss": "4.3.0",
-    "sass": "1.108.2",
     "npm-run-all2": "9.0.4",
     "postcss": "8.5.32",
     "postcss-cli": "12.0.0",
     "remark-cli": "12.0.1",
     "remark-lint": "10.0.1",
-    "remark-preset-lint-recommended": "7.0.1"
+    "remark-preset-lint-recommended": "7.0.1",
+    "rtlcss": "4.3.0",
+    "sass": "1.108.2"
+  },
+  "overrides": {
+    "glob": "14.0.6"
+  },
+  "allowScripts": {
+    "@parcel/watcher": false,
+    "fsevents": false
   },
   "scripts": {
     "mvnbuild": "npm-run-all css-compile css-prefix",
-    "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules etc/:target/bootstrap5-api/css/",
+    "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --quiet-deps --silence-deprecation=import --load-path=node_modules etc/:target/bootstrap5-api/css/",
     "css-prefix": "postcss --config etc/postcss.config.js --replace \"target/bootstrap5-api/css/*.css\" \"!target/bootstrap5-api/css/*.rtl*.css\" \"!target/bootstrap5-api/css/*.min.css\"",
     "lint-md": "remark .",
     "mvntest": ""
